@@ -239,3 +239,12 @@ td {
     font-weight: var(--fw-light);
   }
 }
+
+@media (max-width: 768px) {
+  .main-container {
+    width: 618px;
+  }
+  td {
+    padding: 0.75rem 0;
+  }
+}

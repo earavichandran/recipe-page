@@ -35,6 +35,7 @@
   --fs-24: 1.5rem;
   --fs-28: 1.75rem;
   --fs-32: 2rem;
+  --fs-36: 2.25rem;
   --fs-40: 2.5rem;
 
   --fw-thin: 100;
@@ -195,4 +196,46 @@ td {
   padding-left: 1rem;
   font-weight: var(--fw-bold);
   color: var(--color-brown);
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-stone-100);
+    width: 375px;
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    line-height: 1.5;
+  }
+
+  .main-container {
+    max-width: 100%;
+    background-color: var(--color-white);
+    border-radius: 0;
+    padding: 0;
+  }
+  img {
+    width: 100%;
+    border-radius: 0;
+    object-fit: contain;
+  }
+
+  .content-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem 2rem 2rem;
+    gap: 2rem;
+  }
+
+  .recipe h1 {
+    font-size: var(--fs-36);
+    line-height: 1;
+    margin-bottom: 1.5rem;
+  }
+  p {
+    font-weight: var(--fw-light);
+  }
 }

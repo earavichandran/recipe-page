@@ -196,3 +196,12 @@ td {
   font-weight: var(--fw-bold);
   color: var(--color-brown);
 }
+
+@media (max-width: 768px) {
+  .main-container {
+    width: 618px;
+  }
+  td {
+    padding: 0.75rem 0;
+  }
+}

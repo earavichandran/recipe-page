@@ -198,6 +198,19 @@ td {
   color: var(--color-brown);
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0); /* Support for older browsers */
+  clip-path: inset(50%); /* Modern approach */
+  white-space: nowrap; /* Prevents unwanted text wrapping */
+  border: 0;
+}
+
 @media screen and (max-width: 375px) {
   body {
     display: flex;

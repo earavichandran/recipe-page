@@ -27,10 +27,13 @@
   </head>
   <body>
     <main class="main-container">
-      <picture class="recipe-image">
-        <!-- for image -->
-        <img src="images/image-omelette.jpeg" alt="Omelette" />
-      </picture>
+      <figure class="recipe-figure">
+        <picture class="recipe-image" aria-hidden="true">
+          <!-- for image -->
+          <img src="images/image-omelette.jpeg" alt="Omelette" />
+          <!-- no figcaption needed for decorative images -->
+        </picture>
+      </figure>
       <div class="content-container">
         <section class="recipe">
           <h1>Simple Omelette Recipe</h1>
